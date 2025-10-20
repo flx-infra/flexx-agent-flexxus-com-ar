@@ -2,7 +2,7 @@ version: "3.9"
 services:
   pfa-server:
     build: ./A_PFAServer
-    image: fabreguesm/projectflexxagent-server:1.2.1
+    image: fabreguesm/projectflexxagent-server:1.3.0
     ports:
       - "${SERVER_PORT:-8000}:8000"
     
@@ -38,7 +38,7 @@ services:
 
   pfa-client:
     build: ./D_PFAShadCNClient
-    image: fabreguesm/projectflexxagent-cliente:1.2.1
+    image: fabreguesm/projectflexxagent-cliente:1.3.0
     ports:
       - "${PORT:-3755}:3755"
 
